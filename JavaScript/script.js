@@ -12,10 +12,14 @@ console.log(cognome)
 let colorePreferito = prompt('Dimmi il tuo colore preferito');
 console.log(colorePreferito)
 
-let numero = '21'
+let numero = 21
 console.log(numero)
 
-// let infoGenerali = ` 
-// $(nome) $(cognome) $(colorePreferito)
-// `;
-// console.log(infoGenerali)
+let infoGenerali = ` 
+<h2>
+${nome} ${cognome} ${colorePreferito} ${numero}
+</h2>
+`;
+console.log(infoGenerali);
+document.getElementById('testo').innerHTML = infoGenerali;
+console.log(document.getElementById('testo'));
